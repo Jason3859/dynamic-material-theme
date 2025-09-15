@@ -26,11 +26,11 @@ kotlin {
 
         commonMain.dependencies {
             implementation(compose.material3)
-            implementation(libs.material.color.utilities)
         }
 
         jvmMain.dependencies {
             implementation(libs.java.jna)
+            implementation(libs.material.color.utilities)
         }
     }
 }

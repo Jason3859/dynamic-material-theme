@@ -16,14 +16,14 @@ actual fun DynamicColorTheme(
     val accentColor = getWindowsAccentColorLive()
     val colorScheme = if (accentColor != null) {
         if (isDarkMode)
-            ColorSchemes.getDarkScheme(accentColor)
+            getDarkScheme(accentColor)
         else
-            ColorSchemes.getLightScheme(accentColor)
+            getLightScheme(accentColor)
     } else {
         if (isDarkMode)
-            ColorSchemes.getDarkScheme(defaultPrimary)
+            getDarkScheme(defaultPrimary)
         else
-            ColorSchemes.getLightScheme(defaultPrimary)
+            getLightScheme(defaultPrimary)
     }
 
     MaterialTheme(

@@ -55,7 +55,9 @@ fun DynamicColorTheme(
 
 - `isDarkMode`: Boolean to indicate if dark mode is enabled. Default is based on system setting.
 - `defaultPrimary`: Long value representing the default primary color in case dynamic color is not available. Default is
-  `7773407` (a shade of blue).
+  `7773407` (a shade of blue). Changing this changes theme only on `windows`. For `android`, you have to override the
+  next two params. You can generate your own material
+  theme [here](https://material-foundation.github.io/material-theme-builder/).
 - `defaultLightScheme`: ColorScheme to use when dynamic color is not available in light mode. Default is generated using
   `defaultPrimary`.
 - `defaultDarkScheme`: ColorScheme to use when dynamic color is not available in dark mode. Default is generated using
