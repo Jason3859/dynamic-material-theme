@@ -1,5 +1,6 @@
 package dev.jason.lib.dynamic_material_theme
 
+import android.os.Build
 import androidx.compose.material3.ColorScheme
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.dynamicDarkColorScheme
@@ -17,7 +18,11 @@ actual fun DynamicColorTheme(
 ) {
     val context = LocalContext.current
 
-    val colorScheme = if (isDarkMode) dynamicDarkColorScheme(context) else dynamicDarkColorScheme(context)
+    val colorScheme = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+        if (isDarkMode) dynamicDarkColorScheme(context) else dynamicDarkColorScheme(context)
+    } else {
+        if (isDarkMode) defaultDarkScheme else defaultLightScheme
+    }
 
     MaterialTheme(
         colorScheme = colorScheme,
