@@ -66,6 +66,12 @@ fun DynamicColorTheme(
 
 ---
 
+### What's new
+
+- some bug fixes and improvements.
+
+---
+
 ### Warning!!
 
 - Dynamic color is only supported on Android 12+ and Windows 11+. On other platforms, the default color scheme will be

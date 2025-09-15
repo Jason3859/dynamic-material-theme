@@ -11,7 +11,6 @@ import androidx.compose.ui.platform.LocalContext
 @Composable
 actual fun DynamicColorTheme(
     isDarkMode: Boolean,
-    defaultPrimary: Long,
     defaultLightScheme: ColorScheme,
     defaultDarkScheme: ColorScheme,
     content: @Composable (() -> Unit)

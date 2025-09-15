@@ -11,6 +11,9 @@ internal interface DwmApi : Library {
 
 internal fun getWindowsAccentColorLive(): Long? {
     return try {
+
+        if (!System.getProperty("os.name").contains("windows", true)) null
+
         val dwmApi = Native.load("dwmapi", DwmApi::class.java)
         val colorRef = IntByReference()
         val opaqueRef = IntByReference()

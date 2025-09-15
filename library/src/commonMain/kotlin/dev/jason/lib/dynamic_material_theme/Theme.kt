@@ -3,7 +3,7 @@ package dev.jason.lib.dynamic_material_theme
 import androidx.compose.material3.darkColorScheme
 import androidx.compose.material3.lightColorScheme
 
-val lightScheme = lightColorScheme(
+internal val defaultLightScheme = lightColorScheme(
     primary = primaryLight,
     onPrimary = onPrimaryLight,
     primaryContainer = primaryContainerLight,
@@ -41,7 +41,7 @@ val lightScheme = lightColorScheme(
     surfaceContainerHighest = surfaceContainerHighestLight,
 )
 
-val darkScheme = darkColorScheme(
+internal val defaultDarkScheme = darkColorScheme(
     primary = primaryDark,
     onPrimary = onPrimaryDark,
     primaryContainer = primaryContainerDark,

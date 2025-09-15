@@ -8,7 +8,6 @@ import androidx.compose.runtime.Composable
 @Composable
 actual fun DynamicColorTheme(
     isDarkMode: Boolean,
-    defaultPrimary: Long,
     defaultLightScheme: ColorScheme,
     defaultDarkScheme: ColorScheme,
     content: @Composable (() -> Unit)
@@ -21,9 +20,9 @@ actual fun DynamicColorTheme(
             getLightScheme(accentColor)
     } else {
         if (isDarkMode)
-            getDarkScheme(defaultPrimary)
+            defaultDarkScheme
         else
-            getLightScheme(defaultPrimary)
+            defaultLightScheme
     }
 
     MaterialTheme(

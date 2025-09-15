@@ -29,7 +29,7 @@ kotlin {
         }
 
         jvmMain.dependencies {
-            implementation(libs.java.jna)
+            api(libs.java.jna)
             implementation(libs.material.color.utilities)
         }
     }

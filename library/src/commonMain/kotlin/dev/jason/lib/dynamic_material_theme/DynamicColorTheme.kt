@@ -7,8 +7,7 @@ import androidx.compose.runtime.Composable
 @Composable
 expect fun DynamicColorTheme(
     isDarkMode: Boolean = isSystemInDarkTheme(),
-    defaultPrimary: Long = 7773407,
-    defaultLightScheme: ColorScheme = getLightScheme(defaultPrimary),
-    defaultDarkScheme: ColorScheme = getDarkScheme(defaultPrimary),
+    defaultLightScheme: ColorScheme = dev.jason.lib.dynamic_material_theme.defaultLightScheme,
+    defaultDarkScheme: ColorScheme = dev.jason.lib.dynamic_material_theme.defaultDarkScheme,
     content: @Composable () -> Unit
 )
