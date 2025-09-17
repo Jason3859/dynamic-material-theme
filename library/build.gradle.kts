@@ -10,7 +10,7 @@ plugins {
 }
 
 group = "io.github.jason3859"
-version = "1.0.2"
+version = "2.0.0"
 
 kotlin {
     jvm()
@@ -31,6 +31,7 @@ kotlin {
         jvmMain.dependencies {
             api(libs.java.jna)
             implementation(libs.material.color.utilities)
+            implementation(libs.kotlinx.coroutines.swing)
         }
     }
 }

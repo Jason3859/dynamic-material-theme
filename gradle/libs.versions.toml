@@ -5,10 +5,12 @@ android-minSdk = "24"
 android-compileSdk = "36"
 vanniktechMavenPublish = "0.34.0"
 materialColorUtilities = "1.2.0"
+coroutines = "1.10.2"
 
 [libraries]
 material-color-utilities = { module = "com.materialkolor:material-color-utilities", version.ref = "materialColorUtilities" }
 java-jna = { module = "net.java.dev.jna:jna", version = "5.17.0" }
+kotlinx-coroutines-swing = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-swing", version.ref = "coroutines" }
 
 [plugins]
 androidLibrary = { id = "com.android.library", version.ref = "agp" }
