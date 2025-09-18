@@ -23,13 +23,13 @@
 - Add the dependency to your `build.gradle` file:
 
 ```gradle
-implementation 'io.github.jason3859:dynamic-material-theme:1.0.0'
+implementation 'io.github.jason3859:dynamic-material-theme:2.0.0'
 ```
 
 or `build.gradle.kts` file:
 
 ```kotlin
-implementation("io.github.jason3859:dynamic-material-theme:1.0.0")
+implementation("io.github.jason3859:dynamic-material-theme:2.0.0")
 ```
 
 - Use the `DynamicMaterialTheme` composable in your app:
