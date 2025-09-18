@@ -2,6 +2,13 @@
 
 ---
 
+### What's new
+
+- Desktop now adopts to changes in accent color.
+- some bug fixes and improvements.
+
+---
+
 ### Features
 
 - Dynamic color support for android 12+ and windows
@@ -58,12 +65,6 @@ fun DynamicColorTheme(
 - `defaultDarkScheme`: ColorScheme to use when dynamic color is not available in dark mode. Default is generated using
   `defaultPrimary`.
 - `content`: Composable content to be displayed within the theme.
-
----
-
-### What's new
-
-- some bug fixes and improvements.
 
 ---
 
